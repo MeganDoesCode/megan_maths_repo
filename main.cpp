@@ -9,20 +9,24 @@
 
 using namespace std;
 
-void square(int num);
+void power(int base, int exp);
 
 int main()
 {
     cout<<"GitHub Test!"<<endl;
     
-    square(26);
+    power(26, 2);
     
     return 1;
 }
 
-void square(int num)
+void power(int base, int exp)
 {
-    int squareNum = num * num;
+    int powNum = base;
     
-    cout<<squareNum<<endl;
+    for (int i = 0; i < exp; i++) {
+        powNum *= base;
+    }
+    
+    cout<<powNum<<endl;
 }
